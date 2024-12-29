@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="Trg_Booking_reservation_date" directorySegmentName="seg_0" id="AF478DFD-7767-9CAA-7C23-3A69E21B6CFE">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:07:47 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+	IF (:new.reservation_date >= SYSDATE OR :new.reservation_date >= :new.check_in_date)
+	THEN
+		RAISE_APPLICATION_ERROR( -20001,
+			'Data invalida : ' || TO_CHAR(:new.check_in_date, 'DD.MM.YYYY HH24:MI:SS' ) || ' trebuie sa fie mai devreme decat data curenta si decat data de check-in. ' );
+	END IF;
+END;		
+]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>C9B1DAFE-A7C3-E013-8FE5-26EDBA924757</table>
+</TriggerOraclev10g>

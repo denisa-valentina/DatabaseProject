@@ -1,0 +1,161 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="72215B49-542C-3B0F-D53B-8E324B613FB7" name="Bill">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 18:43:50 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="reservation_ID" id="5EA50D9A-E3D2-3B4C-0368-9D64D21D8C87">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-11-17 10:35:43 UTC</createdTime>
+<generatorID>5D5E30A7-57EC-638F-F9D0-0286F73C8D10</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<referedAttribute>3DA4BAB0-B3DB-AB60-49D1-04882EEC39B1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total_price" id="D2FE0C5E-3E2A-4F0A-114E-0A668C7515FD">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 18:44:13 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<constraintName>Bill_total_price_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="total_price &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="payment_date" id="C64FFBE2-5C75-9B7A-6DAD-AC34FD031C2A">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 18:44:13 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="payment_method" id="D8CDECF2-15BD-17A9-BA21-780F96C95922">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 18:44:14 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<constraintName>Bill_payment_method_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="card" description=""/>
+<valueDef value="numerar" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="card_number" id="A3D85F59-4534-978C-B8B0-82A7FB6F97F4">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 18:44:14 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee_ID" id="55E363D8-341B-548E-D174-67AF917DE5A8">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-11-12 05:46:14 UTC</createdTime>
+<generatorID>EC56A2A5-3737-2935-F03F-02EAE7EF130A</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<referedAttribute>9E5E246E-42C7-6902-9DCE-FA2F3AE1E0AA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="client_ID" id="DC7B79D0-A1D0-8454-A94F-5BDE41F8DCCA">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 11:19:09 UTC</createdTime>
+<generatorID>5D5E30A7-57EC-638F-F9D0-0286F73C8D10</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<referedAttribute>133E0BF5-5C43-6752-ED7A-34A88954DB6B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="room_ID" id="EB550026-AE4F-0422-2A89-ECB63195E829">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 11:19:09 UTC</createdTime>
+<generatorID>5D5E30A7-57EC-638F-F9D0-0286F73C8D10</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<referedAttribute>D27090DC-D204-FA4B-374D-4BDBB92EFDF5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E4DCACCF-F912-DE00-5713-2CDF3F7AA76C" name="Bill PK">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-27 07:42:08 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>EC56A2A5-3737-2935-F03F-02EAE7EF130A,5D5E30A7-57EC-638F-F9D0-0286F73C8D10,5EA50D9A-E3D2-3B4C-0368-9D64D21D8C87</newElementsIDs>
+<usedAttributes>
+<attributeRef>55E363D8-341B-548E-D174-67AF917DE5A8</attributeRef>
+<attributeRef>5EA50D9A-E3D2-3B4C-0368-9D64D21D8C87</attributeRef>
+<attributeRef>DC7B79D0-A1D0-8454-A94F-5BDE41F8DCCA</attributeRef>
+<attributeRef>EB550026-AE4F-0422-2A89-ECB63195E829</attributeRef>
+<attributeRef>5EA50D9A-E3D2-3B4C-0368-9D64D21D8C87</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

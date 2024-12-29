@@ -1,0 +1,172 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AAF0D772-E18B-FE09-2569-D38BC43FC3FF" name="Booking">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 18:19:15 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="reservation_ID" id="3DA4BAB0-B3DB-AB60-49D1-04882EEC39B1">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 18:19:26 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="check_in_date" id="315BCA88-59F8-69D1-ED52-AC82D2EC9E38">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 18:19:28 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="check_out_date" id="3F921D82-4540-56F4-4672-30111ABC1D32">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 18:19:28 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="room_total_price" id="E7CCCA14-6CAC-2DEE-06C9-DE086E9F9A6C">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-11-08 20:27:08 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<constraintName>Booking_room_total_price_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="room_total_price &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="services_price" id="B3829C74-2590-25CB-7BFF-40D7DCA10628">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 18:19:30 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<constraintName>Booking_services_price_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="services_price &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status" id="1DD453A4-D911-1AF4-AF0E-5D00F7D8EC01">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-11-19 11:14:46 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="anulata" description=""/>
+<valueDef value="derulare" description=""/>
+<valueDef value="onorata" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reservation_date" id="B985E530-FF2B-C25F-0EA1-CD55485F9DE5">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 18:19:31 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="client_ID" id="133E0BF5-5C43-6752-ED7A-34A88954DB6B">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-11-12 05:45:10 UTC</createdTime>
+<generatorID>B7C2867E-4E93-D262-157C-9EEFB5DDC2AC</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<referedAttribute>AD1978DD-7802-7763-38D3-04FB8CE95173</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="room_ID" id="D27090DC-D204-FA4B-374D-4BDBB92EFDF5">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-11-17 10:31:56 UTC</createdTime>
+<generatorID>F14CE61D-53CD-F137-5EA5-C1A5A378187F</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<referedAttribute>F7C84D88-2B4B-F210-8C8E-7AF31F09C683</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="330EE631-1CD5-143D-AB14-EDD46D6CA7E2" name="Booking PK">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-27 07:40:52 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>3DA4BAB0-B3DB-AB60-49D1-04882EEC39B1,B7C2867E-4E93-D262-157C-9EEFB5DDC2AC,F14CE61D-53CD-F137-5EA5-C1A5A378187F</newElementsIDs>
+<usedAttributes>
+<attributeRef>3DA4BAB0-B3DB-AB60-49D1-04882EEC39B1</attributeRef>
+<attributeRef>133E0BF5-5C43-6752-ED7A-34A88954DB6B</attributeRef>
+<attributeRef>D27090DC-D204-FA4B-374D-4BDBB92EFDF5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

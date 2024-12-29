@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="Trg_Booking_Update_check_in_date" directorySegmentName="seg_0" id="32A635FA-BF45-1558-F856-F2AAE71BEB68">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-08 08:29:55 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<actions>UPDATE</actions>
+<body><![CDATA[COMPOUND TRIGGER
+
+    -- Variables to store old and new values
+    TYPE t_booking_row IS RECORD (
+        check_in_date  DATE,
+        check_out_date DATE,
+        room_id        NUMBER
+    );
+    l_bookings t_booking_row;
+
+BEFORE EACH ROW IS
+BEGIN
+    -- Store the relevant values before each row update
+    l_bookings.check_in_date  := :NEW.check_in_date;
+    l_bookings.check_out_date := :NEW.check_out_date;
+    l_bookings.room_id        := :NEW.room_id;
+END BEFORE EACH ROW;
+
+AFTER EACH ROW IS
+BEGIN
+    -- Update the total room price after each row update
+    UPDATE booking 
+    SET room_total_price = (l_bookings.check_out_date - l_bookings.check_in_date) * 
+                           (SELECT MAX(price) FROM room r WHERE r.room_id = l_bookings.room_id)
+    WHERE reservation_id = :NEW.reservation_id;
+END AFTER EACH ROW;
+
+END;]]></body>
+<triggerTime>COMPOUND</triggerTime>
+<columns>D91DE2A9-1BBA-7C1B-BD89-DC2E27E54B1F, 500DC7DF-4C2E-9810-C4FD-1E806FD77AF0</columns>
+<table>C9B1DAFE-A7C3-E013-8FE5-26EDBA924757</table>
+</TriggerOraclev10g>

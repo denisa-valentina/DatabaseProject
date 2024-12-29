@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Room_Booking_fk" directorySegmentName="seg_0" id="F14CE61D-53CD-F137-5EA5-C1A5A378187F">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-11-17 10:31:56 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="0895128F-0E49-DBDD-F408-1D68C81AF12C" value="true"/>
+</engineerTo>
+<sourcePk>2C5C8606-8CAA-096D-FBBB-E7CB85563015</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>este rezervata</nameOnSource>
+<nameOnTarget>rezerva</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7539B4DE-AC19-38D0-B6A1-E8EF3F45A2EB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AAF0D772-E18B-FE09-2569-D38BC43FC3FF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

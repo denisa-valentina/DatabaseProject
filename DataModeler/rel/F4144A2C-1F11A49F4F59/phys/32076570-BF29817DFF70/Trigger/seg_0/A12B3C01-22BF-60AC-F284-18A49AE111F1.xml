@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="Trg_Room_floor" directorySegmentName="seg_0" id="A12B3C01-22BF-60AC-F284-18A49AE111F1">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:06:49 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+	IF (:new.floor != FLOOR(:new.room_number / 100))
+	THEN
+		RAISE_APPLICATION_ERROR( -20001,
+			'Ati gresit etajul. ' );
+	END IF;
+END;
+
+]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>FED36419-C3FF-F516-7E0A-F540769B5A50</table>
+</TriggerOraclev10g>

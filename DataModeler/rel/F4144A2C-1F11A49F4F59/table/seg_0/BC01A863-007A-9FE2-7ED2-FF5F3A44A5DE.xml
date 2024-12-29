@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BC01A863-007A-9FE2-7ED2-FF5F3A44A5DE" name="Booking_Service_fk">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="reservation_ID" id="2B009EDC-5C05-751D-85B4-4DE388D5E31D">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="58E51E7D-BB99-591C-E163-A2BF1725D7A3" referredColumn="7F7091D2-2EF8-BDF6-828A-E26C1BBE5819"/>
+</associations>
+</Column>
+<Column name="client_ID" id="12B5CF24-E8DB-9E46-FFA0-8C1F2EF114E5">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="58E51E7D-BB99-591C-E163-A2BF1725D7A3" referredColumn="50FD540D-8DD5-E88E-0DEA-E374432C8D12"/>
+</associations>
+</Column>
+<Column name="room_ID" id="BEDBBBC1-1F3C-C336-FD6F-E1CC4D3AD5F7">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="58E51E7D-BB99-591C-E163-A2BF1725D7A3" referredColumn="16FA3293-599A-FAF8-90D3-84A3BF51C519"/>
+</associations>
+</Column>
+<Column name="service_ID" id="83E9BE5B-7CED-9298-A951-F782F8F7E73B">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A329E2C1-F93E-F1B8-58EC-9939BF3A78C2" referredColumn="1E39C689-EE73-8E7E-7F4C-1E8D218F6D1C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1FC46EE4-DBC9-C9BB-D57C-0821B3D828D1" name="Booking_Service_fk_PK">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B009EDC-5C05-751D-85B4-4DE388D5E31D"/>
+<colUsage columnID="12B5CF24-E8DB-9E46-FFA0-8C1F2EF114E5"/>
+<colUsage columnID="BEDBBBC1-1F3C-C336-FD6F-E1CC4D3AD5F7"/>
+<colUsage columnID="83E9BE5B-7CED-9298-A951-F782F8F7E73B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C143BAC8-A3FE-7F84-96D6-13FFA8D0C7FD" name="Booking_Service_fk_Booking_FK">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>E52AD2EA-714A-6D24-0C04-EC3CFA1A50B8</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B009EDC-5C05-751D-85B4-4DE388D5E31D"/>
+<colUsage columnID="12B5CF24-E8DB-9E46-FFA0-8C1F2EF114E5"/>
+<colUsage columnID="BEDBBBC1-1F3C-C336-FD6F-E1CC4D3AD5F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="16BC79C6-C3EC-C653-CA18-515A331BADEB" name="Booking_Service_fk_Service_FK">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>E52AD2EA-714A-6D24-0C04-EC3CFA1A50B8</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83E9BE5B-7CED-9298-A951-F782F8F7E73B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

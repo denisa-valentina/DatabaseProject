@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="98C008D5-C6B6-34A4-A802-2FB66DD62C66" name="Service">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>4C8400EF-5172-2EF1-80B2-F5FCE1FC3DC6</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="service_ID" id="1E39C689-EE73-8E7E-7F4C-1E8D218F6D1C">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>22E11517-E09F-F886-7817-ACD1ABAEE96E</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementStartWith>10</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="service_name" id="DC98300A-0684-54DB-779F-6D692D74BBA2">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>EBBB4ED1-22FA-763C-1E4E-A9E40B01FFBC</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<constraintName>Service_service_name_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<listOfValues>
+<valueDef value="cazino" description=""/>
+<valueDef value="fitness" description=""/>
+<valueDef value="restaurant" description=""/>
+<valueDef value="spa" description=""/>
+</listOfValues>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="price" id="AB7491C6-7079-33A9-CC6F-FC5B865AABCE">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>56AF9242-8B98-9282-59F1-D85C10A6DB57</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<constraintName>Service_price_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="price &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="55D6D9BE-30A2-4A7F-32A5-F26B8C815594">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>3017F850-69B4-88B8-3D3E-8D7C67E8CA9E</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F4EE9705-2139-054F-19F9-67F99D91F18F" name="Service_PK">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>EC718C3B-55F7-11E7-FBF2-8513C9FAE212</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E39C689-EE73-8E7E-7F4C-1E8D218F6D1C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BC97879C-0A6A-2058-FED9-3CE43A4BE8F6" name="Service_UK">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>1BB10ED4-6AB2-AB57-8336-72606B096073</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC98300A-0684-54DB-779F-6D692D74BBA2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

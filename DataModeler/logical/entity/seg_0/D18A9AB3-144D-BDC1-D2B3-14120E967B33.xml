@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D18A9AB3-144D-BDC1-D2B3-14120E967B33" name="Employee">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 09:46:30 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="employee_ID" id="9E5E246E-42C7-6902-9DCE-FA2F3AE1E0AA">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 09:55:21 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="45A3BCE2-8629-5F8F-FDED-89DFA0CD6FD5">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 09:48:22 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<constraintName>Employee_name_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(name, &apos;([A-Z]+[a-z]+)( [A-Z]+[a-z]+)*&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="phone_number" id="460CEE37-E5A5-9197-595F-0B73603E7262">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 09:48:24 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<constraintName>Employee_phone_number_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(phone_number,&apos;^07[0-9]{8}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="job" id="44E76DEF-9E17-B09F-6912-779BC2943C3E">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 09:48:24 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<constraintName>Employee_job_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<listOfValues>
+<valueDef value="chelner" description=""/>
+<valueDef value="instalator" description=""/>
+<valueDef value="manager" description=""/>
+<valueDef value="menajer" description=""/>
+<valueDef value="receptie" description=""/>
+</listOfValues>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hire_date" id="4A508A1E-AF52-C415-94F0-F48081375F2B">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 09:48:24 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="salary" id="2ED43293-258B-75CD-E3F3-5424E727F6D9">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 09:48:25 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<constraintName>Employee_salary_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="salary &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FBBBAEB4-3BE0-0ECE-3865-35FA8156BFA1" name="Employee PK">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 09:47:37 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9E5E246E-42C7-6902-9DCE-FA2F3AE1E0AA</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="B000E0E0-55F5-FF09-E225-18E868B90A6D" name="Employee Uk">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 09:51:42 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<newElementsIDs>460CEE37-E5A5-9197-595F-0B73603E7262</newElementsIDs>
+<usedAttributes>
+<attributeRef>460CEE37-E5A5-9197-595F-0B73603E7262</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

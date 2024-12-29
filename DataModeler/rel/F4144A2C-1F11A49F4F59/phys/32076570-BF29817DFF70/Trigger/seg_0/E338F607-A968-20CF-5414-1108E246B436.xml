@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="Trg_Client_birth_date" directorySegmentName="seg_0" id="E338F607-A968-20CF-5414-1108E246B436">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:05:37 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+	IF (:new.birth_date >= SYSDATE)
+	THEN
+		RAISE_APPLICATION_ERROR( -20001,
+			'Data invalida : ' || TO_CHAR(:new.birth_date, 'DD.MM.YYYY HH24:MI:SS' ) || ' trebuie sa fie mai devreme decat data curenta.' );
+	END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>85BF5002-D8C8-6464-8AE7-D93070C82555</table>
+</TriggerOraclev10g>

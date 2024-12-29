@@ -1,0 +1,183 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C9B1DAFE-A7C3-E013-8FE5-26EDBA924757" name="Booking">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>AAF0D772-E18B-FE09-2569-D38BC43FC3FF</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="reservation_ID" id="7F7091D2-2EF8-BDF6-828A-E26C1BBE5819">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>3DA4BAB0-B3DB-AB60-49D1-04882EEC39B1</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementStartWith>100000</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="check_in_date" id="D91DE2A9-1BBA-7C1B-BD89-DC2E27E54B1F">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>315BCA88-59F8-69D1-ED52-AC82D2EC9E38</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="check_out_date" id="500DC7DF-4C2E-9810-C4FD-1E806FD77AF0">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>3F921D82-4540-56F4-4672-30111ABC1D32</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="room_total_price" id="A631F041-BDBE-3096-543B-60AD83A5FED8">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>E7CCCA14-6CAC-2DEE-06C9-DE086E9F9A6C</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<constraintName>Booking_room_total_price_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="room_total_price &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="services_price" id="F9A3B8CB-89A4-1EB6-970A-A4FC427FF23C">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>B3829C74-2590-25CB-7BFF-40D7DCA10628</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<constraintName>Booking_services_price_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="services_price &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="675B8E49-C36A-40F2-AAB7-A23E6EEC154C">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>1DD453A4-D911-1AF4-AF0E-5D00F7D8EC01</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="anulata" description=""/>
+<valueDef value="derulare" description=""/>
+<valueDef value="onorata" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="reservation_date" id="6D8B9791-9AAF-8306-7D9A-BBF91F95D166">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>B985E530-FF2B-C25F-0EA1-CD55485F9DE5</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="client_ID" id="50FD540D-8DD5-E88E-0DEA-E374432C8D12">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>133E0BF5-5C43-6752-ED7A-34A88954DB6B</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E376CCA4-6595-9EE7-1C3D-94A200A08B79" referredColumn="8CFB113E-6436-C646-FC2B-032EDED071DA"/>
+</associations>
+</Column>
+<Column name="room_ID" id="16FA3293-599A-FAF8-90D3-84A3BF51C519">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>D27090DC-D204-FA4B-374D-4BDBB92EFDF5</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0B16525C-1EFE-E727-2F67-5150C7EB0330" referredColumn="5A7A5BDD-4F16-EE2A-4282-24D5C71333C5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9EC6DAEC-7D9A-0CA1-F95F-7B7449947824" name="Booking_PK">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>330EE631-1CD5-143D-AB14-EDD46D6CA7E2</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F7091D2-2EF8-BDF6-828A-E26C1BBE5819"/>
+<colUsage columnID="50FD540D-8DD5-E88E-0DEA-E374432C8D12"/>
+<colUsage columnID="16FA3293-599A-FAF8-90D3-84A3BF51C519"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="884ECBBB-8131-3EE0-7846-B7E9919E4A13" name="Client_Booking_fk">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>B7C2867E-4E93-D262-157C-9EEFB5DDC2AC</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50FD540D-8DD5-E88E-0DEA-E374432C8D12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E85C9F5D-89DA-CE50-019D-F59FF51E52CA" name="Room_Booking_fk">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>F14CE61D-53CD-F137-5EA5-C1A5A378187F</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="16FA3293-599A-FAF8-90D3-84A3BF51C519"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

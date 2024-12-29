@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Booking_Service_fk" directorySegmentName="seg_0" id="BC01A863-007A-9FE2-7ED2-FF5F3A44A5DE">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Booking_client_ID" id="12B5CF24-E8DB-9E46-FFA0-8C1F2EF114E5">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Booking_reservation_ID" id="2B009EDC-5C05-751D-85B4-4DE388D5E31D">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Service_service_ID" id="83E9BE5B-7CED-9298-A951-F782F8F7E73B">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Booking_room_ID" id="BEDBBBC1-1F3C-C336-FD6F-E1CC4D3AD5F7">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Booking_Service_fk_Service_FK" id="16BC79C6-C3EC-C653-CA18-515A331BADEB">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Booking_Service_fk_Booking_FK" id="C143BAC8-A3FE-7F84-96D6-13FFA8D0C7FD">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Booking_Service_fk_PK" id="1FC46EE4-DBC9-C9BB-D57C-0821B3D828D1">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

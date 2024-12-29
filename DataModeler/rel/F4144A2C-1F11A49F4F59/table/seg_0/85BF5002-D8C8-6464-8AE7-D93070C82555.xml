@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="85BF5002-D8C8-6464-8AE7-D93070C82555" name="Client">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>B020F13C-A723-95EB-4BA2-0C4A64A737D6</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="client_ID" id="8CFB113E-6436-C646-FC2B-032EDED071DA">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>AD1978DD-7802-7763-38D3-04FB8CE95173</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementStartWith>10000</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="22064963-8486-C93C-7D77-A49378F33A39">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>70F6AE77-EB92-8DC0-D96A-18D011361A81</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<constraintName>Client_name_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(name, &apos;([A-Z]+[a-z]+)( [A-Z]+[a-z]+)*&apos; )"/>
+</checkConstraint>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="birth_date" id="66F63BB0-39C3-6A1B-5FA9-A91370BA7022">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>08294B42-F67E-688A-E121-A8C4D8E10C10</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phone_number" id="0A4980E7-C574-D028-E5BD-5BEC8C52172E">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>4B40B190-4AE8-BE61-5543-0DC8ED5309A0</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<constraintName>Client_phone_number_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(phone_number,&apos;^07[0-9]{8}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="3B61B3E2-3BFD-4C8C-6E20-1E1F9CC4DA9A">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>EEF3A656-6ECE-8213-988A-2462E668A95E</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<constraintName>Client_email_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A455D0ED-420D-B8B8-95CF-2AC1720A5722" name="Client_Pk">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>7F8AE37E-9290-FEB0-EE19-E98B46EFAA69</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8CFB113E-6436-C646-FC2B-032EDED071DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F11EEED5-734D-6A50-A3BA-D85FA905252A" name="Client_Uk">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>DCE901BA-2DAC-80C5-571C-D5B113FF52E9</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B61B3E2-3BFD-4C8C-6E20-1E1F9CC4DA9A"/>
+<colUsage columnID="0A4980E7-C574-D028-E5BD-5BEC8C52172E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

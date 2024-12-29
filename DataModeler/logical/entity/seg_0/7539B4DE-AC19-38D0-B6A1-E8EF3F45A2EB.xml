@@ -1,0 +1,171 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7539B4DE-AC19-38D0-B6A1-E8EF3F45A2EB" name="Room">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 08:41:04 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="room_ID" id="F7C84D88-2B4B-F210-8C8E-7AF31F09C683">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 08:42:43 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="room_number" id="BEA44163-E0E3-DA56-B2D8-C70A79DA7E1D">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 08:49:06 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<constraintName>Room_room_number_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>101</beginValue>
+<endValue>110</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>201</beginValue>
+<endValue>210</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>301</beginValue>
+<endValue>310</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>401</beginValue>
+<endValue>410</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>501</beginValue>
+<endValue>510</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>601</beginValue>
+<endValue>610</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>701</beginValue>
+<endValue>710</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>801</beginValue>
+<endValue>810</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>901</beginValue>
+<endValue>910</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1001</beginValue>
+<endValue>1010</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="floor" id="B0ED2ED0-6874-712B-F994-005661A4C6E4">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 09:00:43 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<constraintName>Room_floor_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>10</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="capacity" id="F69830A8-4A19-D8F0-61DC-87E1633FE096">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 09:02:47 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<constraintName>Room_capacity_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>5</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="price" id="FAB468A5-0182-046E-A3BE-7EA2B21D3E62">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 09:03:56 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<constraintName>Room_price_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="price &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2C5C8606-8CAA-096D-FBBB-E7CB85563015" name="Room PK">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 08:45:43 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F7C84D88-2B4B-F210-8C8E-7AF31F09C683</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="F0FE975A-EE25-DFD1-653D-2916071C7FF3" name="Room Uk">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 09:43:34 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<newElementsIDs>BEA44163-E0E3-DA56-B2D8-C70A79DA7E1D</newElementsIDs>
+<usedAttributes>
+<attributeRef>BEA44163-E0E3-DA56-B2D8-C70A79DA7E1D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

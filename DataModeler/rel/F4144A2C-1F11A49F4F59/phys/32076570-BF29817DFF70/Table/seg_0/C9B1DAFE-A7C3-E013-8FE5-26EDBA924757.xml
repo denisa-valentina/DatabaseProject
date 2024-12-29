@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Booking" directorySegmentName="seg_0" id="C9B1DAFE-A7C3-E013-8FE5-26EDBA924757">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="room_ID" id="16FA3293-599A-FAF8-90D3-84A3BF51C519">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="check_out_date" id="500DC7DF-4C2E-9810-C4FD-1E806FD77AF0">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="client_ID" id="50FD540D-8DD5-E88E-0DEA-E374432C8D12">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="status" id="675B8E49-C36A-40F2-AAB7-A23E6EEC154C">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="reservation_date" id="6D8B9791-9AAF-8306-7D9A-BBF91F95D166">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<defaultValue>SYSDATE</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="reservation_ID" id="7F7091D2-2EF8-BDF6-828A-E26C1BBE5819">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="room_total_price" id="A631F041-BDBE-3096-543B-60AD83A5FED8">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="check_in_date" id="D91DE2A9-1BBA-7C1B-BD89-DC2E27E54B1F">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="services_price" id="F9A3B8CB-89A4-1EB6-970A-A4FC427FF23C">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Client_Booking_fk" id="884ECBBB-8131-3EE0-7846-B7E9919E4A13">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Room_Booking_fk" id="E85C9F5D-89DA-CE50-019D-F59FF51E52CA">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Booking_PK" id="9EC6DAEC-7D9A-0CA1-F95F-7B7449947824">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

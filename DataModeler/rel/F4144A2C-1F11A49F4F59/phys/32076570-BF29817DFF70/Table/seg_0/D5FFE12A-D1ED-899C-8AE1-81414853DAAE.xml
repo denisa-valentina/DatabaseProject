@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Employee" directorySegmentName="seg_0" id="D5FFE12A-D1ED-899C-8AE1-81414853DAAE">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="salary" id="A48617B4-6A92-E9DA-B28A-FFD7D0A6662D">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="name" id="A59FFA51-A290-FBE1-2155-1CCEA78FC754">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="job" id="B1051F8E-CA3B-789F-8535-A4FC07AF4930">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="employee_ID" id="CA7DD0B0-ABA1-A063-5E0C-CDBA7B5CB77A">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="phone_number" id="D5CC1CB6-ADB4-622B-E57F-566841D7F1AC">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="hire_date" id="E9D21015-B3F5-FF3B-3CD9-82B33398BFA4">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Employee_PK" id="957E76C5-6F83-2353-04AB-7D97B5173A3C">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="Employee_Uk" id="9000ABD4-8874-B49D-E6B6-EBEAEF45A98C">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

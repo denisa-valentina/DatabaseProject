@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4C8400EF-5172-2EF1-80B2-F5FCE1FC3DC6" name="Service">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 18:39:53 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="0895128F-0E49-DBDD-F408-1D68C81AF12C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="service_ID" id="22E11517-E09F-F886-7817-ACD1ABAEE96E">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 18:40:13 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="0895128F-0E49-DBDD-F408-1D68C81AF12C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="service_name" id="EBBB4ED1-22FA-763C-1E4E-A9E40B01FFBC">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 18:40:14 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="0895128F-0E49-DBDD-F408-1D68C81AF12C" value="true"/>
+</engineerTo>
+<constraintName>Service_service_name_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<listOfValues>
+<valueDef value="cazino" description=""/>
+<valueDef value="fitness" description=""/>
+<valueDef value="restaurant" description=""/>
+<valueDef value="spa" description=""/>
+</listOfValues>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="price" id="56AF9242-8B98-9282-59F1-D85C10A6DB57">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 18:40:14 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="0895128F-0E49-DBDD-F408-1D68C81AF12C" value="true"/>
+</engineerTo>
+<constraintName>Service_price_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="price &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="3017F850-69B4-88B8-3D3E-8D7C67E8CA9E">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 18:40:14 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="0895128F-0E49-DBDD-F408-1D68C81AF12C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EC718C3B-55F7-11E7-FBF2-8513C9FAE212" name="Service PK">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 18:40:25 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="0895128F-0E49-DBDD-F408-1D68C81AF12C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>22E11517-E09F-F886-7817-ACD1ABAEE96E</newElementsIDs>
+<usedAttributes>
+<attributeRef>22E11517-E09F-F886-7817-ACD1ABAEE96E</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="1BB10ED4-6AB2-AB57-8336-72606B096073" name="Service UK">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 18:41:38 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="0895128F-0E49-DBDD-F408-1D68C81AF12C" value="true"/>
+</engineerTo>
+<newElementsIDs>EBBB4ED1-22FA-763C-1E4E-A9E40B01FFBC</newElementsIDs>
+<usedAttributes>
+<attributeRef>EBBB4ED1-22FA-763C-1E4E-A9E40B01FFBC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

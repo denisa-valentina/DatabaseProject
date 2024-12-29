@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Service" directorySegmentName="seg_0" id="98C008D5-C6B6-34A4-A802-2FB66DD62C66">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="service_ID" id="1E39C689-EE73-8E7E-7F4C-1E8D218F6D1C">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="description" id="55D6D9BE-30A2-4A7F-32A5-F26B8C815594">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="price" id="AB7491C6-7079-33A9-CC6F-FC5B865AABCE">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="service_name" id="DC98300A-0684-54DB-779F-6D692D74BBA2">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Service_PK" id="F4EE9705-2139-054F-19F9-67F99D91F18F">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="Service_UK" id="BC97879C-0A6A-2058-FED9-3CE43A4BE8F6">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

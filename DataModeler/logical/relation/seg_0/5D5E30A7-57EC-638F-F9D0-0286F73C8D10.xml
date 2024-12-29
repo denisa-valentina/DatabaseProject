@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Booking_Bill_fk" directorySegmentName="seg_0" id="5D5E30A7-57EC-638F-F9D0-0286F73C8D10">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-11-17 10:35:43 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="89DCE579-1EED-0A54-7BEC-33C6BFA44B1B" value="true"/>
+</engineerTo>
+<sourcePk>330EE631-1CD5-143D-AB14-EDD46D6CA7E2</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>are</nameOnSource>
+<nameOnTarget>corespunde</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AAF0D772-E18B-FE09-2569-D38BC43FC3FF</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>72215B49-542C-3B0F-D53B-8E324B613FB7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

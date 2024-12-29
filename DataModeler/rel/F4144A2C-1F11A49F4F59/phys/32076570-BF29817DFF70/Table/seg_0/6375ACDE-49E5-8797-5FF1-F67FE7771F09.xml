@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Bill" directorySegmentName="seg_0" id="6375ACDE-49E5-8797-5FF1-F67FE7771F09">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="employee_ID" id="01ED0A69-3BBE-7EA7-97F0-04E9601B531A">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="reservation_ID" id="33209B7B-C15F-3AB7-A5F8-9294FC3587FA">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="card_number" id="8161917B-532B-2CB6-A6B9-7E6B0F58F61C">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="client_ID" id="937CF69D-E2D1-84CC-AB90-6607D9257739">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="room_ID" id="A9261A64-4ADF-DEBC-5A7F-C9818A33668C">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="payment_method" id="B3B70BB7-A6E2-481B-39B9-DB3333A24822">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="payment_date" id="BCBAD786-74AF-98E5-1248-5CAEA93A6D46">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="total_price" id="BEBB6668-9266-3344-93DB-D71B10B28140">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="Bill__IDX" id="EB976E0E-8F49-C7CD-C18E-DEFA195FD2DC">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Employee_Bill_fk" id="4BF1B437-DD64-55EA-516A-54B1113D8185">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Booking_Bill_fk" id="F6F9EB2A-1777-EC02-9D1C-C300C86F4313">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Bill_PK" id="EBA2CD58-8272-0258-31C7-DAA673CC2FEA">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 20:00:44 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

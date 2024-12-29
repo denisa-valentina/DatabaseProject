@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="Trg_Bill_employee_id" directorySegmentName="seg_0" id="DBC4B4AB-F596-0EDD-10CC-849680F3AC79">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-08 10:15:27 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[DECLARE no_employees NUMBER;
+BEGIN
+    select COUNT(*) into no_employees 
+    from employee e 
+    where e.employee_id = :new.employee_id 
+        and e.job not like '%receptie%';
+	IF ( no_employees > 0) 
+	THEN
+		RAISE_APPLICATION_ERROR( -20001,
+			'Acest angajat nu se ocupa de plati, nefiind un receptioner. ' );
+	END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>6375ACDE-49E5-8797-5FF1-F67FE7771F09</table>
+</TriggerOraclev10g>

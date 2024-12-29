@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Booking_Service_fk" directorySegmentName="seg_0" id="E52AD2EA-714A-6D24-0C04-EC3CFA1A50B8">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-11-12 05:47:11 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="0895128F-0E49-DBDD-F408-1D68C81AF12C" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>include</nameOnSource>
+<nameOnTarget>este inclus</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>AAF0D772-E18B-FE09-2569-D38BC43FC3FF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4C8400EF-5172-2EF1-80B2-F5FCE1FC3DC6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

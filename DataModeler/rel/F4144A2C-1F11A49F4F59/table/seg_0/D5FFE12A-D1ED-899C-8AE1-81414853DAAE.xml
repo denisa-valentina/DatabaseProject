@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D5FFE12A-D1ED-899C-8AE1-81414853DAAE" name="Employee">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>D18A9AB3-144D-BDC1-D2B3-14120E967B33</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="employee_ID" id="CA7DD0B0-ABA1-A063-5E0C-CDBA7B5CB77A">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>9E5E246E-42C7-6902-9DCE-FA2F3AE1E0AA</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementStartWith>100</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="A59FFA51-A290-FBE1-2155-1CCEA78FC754">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>45A3BCE2-8629-5F8F-FDED-89DFA0CD6FD5</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<constraintName>Employee_name_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(name, &apos;([A-Z]+[a-z]+)( [A-Z]+[a-z]+)*&apos; )"/>
+</checkConstraint>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phone_number" id="D5CC1CB6-ADB4-622B-E57F-566841D7F1AC">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>460CEE37-E5A5-9197-595F-0B73603E7262</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<constraintName>Employee_phone_number_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(phone_number,&apos;^07[0-9]{8}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="job" id="B1051F8E-CA3B-789F-8535-A4FC07AF4930">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>44E76DEF-9E17-B09F-6912-779BC2943C3E</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<constraintName>Employee_job_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<listOfValues>
+<valueDef value="chelner" description=""/>
+<valueDef value="instalator" description=""/>
+<valueDef value="manager" description=""/>
+<valueDef value="menajer" description=""/>
+<valueDef value="receptie" description=""/>
+</listOfValues>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hire_date" id="E9D21015-B3F5-FF3B-3CD9-82B33398BFA4">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>4A508A1E-AF52-C415-94F0-F48081375F2B</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="salary" id="A48617B4-6A92-E9DA-B28A-FFD7D0A6662D">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>2ED43293-258B-75CD-E3F3-5424E727F6D9</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<constraintName>Employee_salary_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="salary &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="957E76C5-6F83-2353-04AB-7D97B5173A3C" name="Employee_PK">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>FBBBAEB4-3BE0-0ECE-3865-35FA8156BFA1</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA7DD0B0-ABA1-A063-5E0C-CDBA7B5CB77A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9000ABD4-8874-B49D-E6B6-EBEAEF45A98C" name="Employee_Uk">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>B000E0E0-55F5-FF09-E225-18E868B90A6D</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5CC1CB6-ADB4-622B-E57F-566841D7F1AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Employee_Bill_fk" directorySegmentName="seg_0" id="EC56A2A5-3737-2935-F03F-02EAE7EF130A">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-11-12 05:46:14 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="0895128F-0E49-DBDD-F408-1D68C81AF12C" value="true"/>
+</engineerTo>
+<sourcePk>FBBBAEB4-3BE0-0ECE-3865-35FA8156BFA1</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>inregistreaza</nameOnSource>
+<nameOnTarget>este inregistrat</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D18A9AB3-144D-BDC1-D2B3-14120E967B33</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>72215B49-542C-3B0F-D53B-8E324B613FB7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

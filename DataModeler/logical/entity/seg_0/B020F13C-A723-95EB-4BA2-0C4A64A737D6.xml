@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B020F13C-A723-95EB-4BA2-0C4A64A737D6" name="Client">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 09:15:29 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="client_ID" id="AD1978DD-7802-7763-38D3-04FB8CE95173">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 09:16:04 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="70F6AE77-EB92-8DC0-D96A-18D011361A81">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 09:17:11 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<constraintName>Client_name_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(name, &apos;([A-Z]+[a-z]+)( [A-Z]+[a-z]+)*&apos; )"/>
+</checkConstraint>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="birth_date" id="08294B42-F67E-688A-E121-A8C4D8E10C10">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 09:22:15 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="phone_number" id="4B40B190-4AE8-BE61-5543-0DC8ED5309A0">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 09:29:13 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<constraintName>Client_phone_number_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(phone_number,&apos;^07[0-9]{8}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="EEF3A656-6ECE-8213-988A-2462E668A95E">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 09:34:28 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<constraintName>Client_email_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7F8AE37E-9290-FEB0-EE19-E98B46EFAA69" name="Client Pk">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 09:16:21 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>AD1978DD-7802-7763-38D3-04FB8CE95173</newElementsIDs>
+<usedAttributes>
+<attributeRef>AD1978DD-7802-7763-38D3-04FB8CE95173</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="DCE901BA-2DAC-80C5-571C-D5B113FF52E9" name="Client Uk">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-10-26 09:41:06 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<engineerTo>
+<item key="F4144A2C-EE1A-BA20-2E21-1F11A49F4F59" value="true"/>
+</engineerTo>
+<newElementsIDs>EEF3A656-6ECE-8213-988A-2462E668A95E,4B40B190-4AE8-BE61-5543-0DC8ED5309A0</newElementsIDs>
+<usedAttributes>
+<attributeRef>EEF3A656-6ECE-8213-988A-2462E668A95E</attributeRef>
+<attributeRef>4B40B190-4AE8-BE61-5543-0DC8ED5309A0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

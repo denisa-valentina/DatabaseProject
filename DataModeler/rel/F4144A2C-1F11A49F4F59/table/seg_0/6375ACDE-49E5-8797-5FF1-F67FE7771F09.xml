@@ -1,0 +1,189 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6375ACDE-49E5-8797-5FF1-F67FE7771F09" name="Bill">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>72215B49-542C-3B0F-D53B-8E324B613FB7</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="reservation_ID" id="33209B7B-C15F-3AB7-A5F8-9294FC3587FA">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>5EA50D9A-E3D2-3B4C-0368-9D64D21D8C87</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F49463CA-F86C-D588-9AF8-0CC8ED925343" referredColumn="7F7091D2-2EF8-BDF6-828A-E26C1BBE5819"/>
+</associations>
+</Column>
+<Column name="total_price" id="BEBB6668-9266-3344-93DB-D71B10B28140">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>D2FE0C5E-3E2A-4F0A-114E-0A668C7515FD</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<constraintName>Bill_total_price_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="total_price &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="payment_date" id="BCBAD786-74AF-98E5-1248-5CAEA93A6D46">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>C64FFBE2-5C75-9B7A-6DAD-AC34FD031C2A</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="payment_method" id="B3B70BB7-A6E2-481B-39B9-DB3333A24822">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>D8CDECF2-15BD-17A9-BA21-780F96C95922</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<constraintName>Bill_payment_method_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="card" description=""/>
+<valueDef value="numerar" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="card_number" id="8161917B-532B-2CB6-A6B9-7E6B0F58F61C">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>A3D85F59-4534-978C-B8B0-82A7FB6F97F4</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_ID" id="01ED0A69-3BBE-7EA7-97F0-04E9601B531A">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>55E363D8-341B-548E-D174-67AF917DE5A8</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EBDFB54D-29D7-F485-61B2-309BD5CE1454" referredColumn="CA7DD0B0-ABA1-A063-5E0C-CDBA7B5CB77A"/>
+</associations>
+</Column>
+<Column name="client_ID" id="937CF69D-E2D1-84CC-AB90-6607D9257739">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>DC7B79D0-A1D0-8454-A94F-5BDE41F8DCCA</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F49463CA-F86C-D588-9AF8-0CC8ED925343" referredColumn="50FD540D-8DD5-E88E-0DEA-E374432C8D12"/>
+</associations>
+</Column>
+<Column name="room_ID" id="A9261A64-4ADF-DEBC-5A7F-C9818A33668C">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>EB550026-AE4F-0422-2A89-ECB63195E829</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F49463CA-F86C-D588-9AF8-0CC8ED925343" referredColumn="16FA3293-599A-FAF8-90D3-84A3BF51C519"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EBA2CD58-8272-0258-31C7-DAA673CC2FEA" name="Bill_PK">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>E4DCACCF-F912-DE00-5713-2CDF3F7AA76C</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01ED0A69-3BBE-7EA7-97F0-04E9601B531A"/>
+<colUsage columnID="33209B7B-C15F-3AB7-A5F8-9294FC3587FA"/>
+<colUsage columnID="937CF69D-E2D1-84CC-AB90-6607D9257739"/>
+<colUsage columnID="A9261A64-4ADF-DEBC-5A7F-C9818A33668C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB976E0E-8F49-C7CD-C18E-DEFA195FD2DC" name="Bill__IDX">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<ownerDesignName>assignment4</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>5D5E30A7-57EC-638F-F9D0-0286F73C8D10</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="33209B7B-C15F-3AB7-A5F8-9294FC3587FA"/>
+<colUsage columnID="937CF69D-E2D1-84CC-AB90-6607D9257739"/>
+<colUsage columnID="A9261A64-4ADF-DEBC-5A7F-C9818A33668C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F6F9EB2A-1777-EC02-9D1C-C300C86F4313" name="Booking_Bill_fk">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>5D5E30A7-57EC-638F-F9D0-0286F73C8D10</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="33209B7B-C15F-3AB7-A5F8-9294FC3587FA"/>
+<colUsage columnID="937CF69D-E2D1-84CC-AB90-6607D9257739"/>
+<colUsage columnID="A9261A64-4ADF-DEBC-5A7F-C9818A33668C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4BF1B437-DD64-55EA-516A-54B1113D8185" name="Employee_Bill_fk">
+<createdBy>Denisa</createdBy>
+<createdTime>2024-12-07 19:53:10 UTC</createdTime>
+<generatorID>EC56A2A5-3737-2935-F03F-02EAE7EF130A</generatorID>
+<ownerDesignName>assignment4</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01ED0A69-3BBE-7EA7-97F0-04E9601B531A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
